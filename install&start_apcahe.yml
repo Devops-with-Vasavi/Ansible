@@ -1,0 +1,14 @@
+- name: "Install apche we serve"
+  hosts: frontend
+  become: true
+  tasks:
+    - name: "Install apache and start the service"
+      tasks:
+        - name: "Install Apache"
+          apt:
+            name: apache
+            state: present
+        - name: "Start Apache"
+          service:
+            name: apache
+            state: started
