@@ -3,12 +3,12 @@
   become: true
   tasks:
     - name: "Install apache and start the service"
-      tasks:
-        - name: "Install Apache"
-          apt:
-            name: apache
-            state: present
-        - name: "Start Apache"
-          service:
-            name: apache
-            state: started
+      apt:
+          name: apache2
+          state: present
+    - name: "Start the apache2 service"
+      service:  
+          name: apache2
+          state: started
+
+    
