@@ -2,14 +2,14 @@
   hosts: frontend
   become: true
   tasks:
-    - name: "Install apache2"
+    - name: "Install nginx""
       apt:
-        name: apache2
+        name: nginx
         state: present
 
-    - name: "Start the apache2 service"
+    - name: "Start the nginx service"
       service:
-        name: apache2
+        name: nginx
         state: started
 
 
