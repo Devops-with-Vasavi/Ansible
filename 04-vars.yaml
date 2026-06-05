@@ -11,10 +11,7 @@
   - name: enter_duration
     prompt: "please enter course duration"
     private: no
-  - name: "please enter your course fee"
-    prompt: "Please enter course fee"
-    private: yes
   tasks:
   - name: print information
     debug:
-      msg: "Hi, I am learning Ansible,Course name is {{ enter_course }}, and trainer is {{ enter_trainer }}, and duration is {{ enter_duration }}, and course fee is {{ enter_course_fee }}"
+      msg: "Hi, I am learning Ansible,Course name is {{ enter_course }}, and trainer is {{ enter_trainer }}, and duration is {{ enter_duration }}"
