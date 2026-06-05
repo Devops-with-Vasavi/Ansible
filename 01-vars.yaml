@@ -8,4 +8,4 @@
   tasks:
   - name: print information
     debug:
-      msg: "Hi, I am learning Ansible,Course name is {{ COURSE }}, and trainer is {{ TRAINER }}, and duration is {{ DURATION }}""
+      msg: "Hi, I am learning Ansible,Course name is {{ COURSE }}, and trainer is {{ TRAINER }}, and duration is {{ DURATION }}"
