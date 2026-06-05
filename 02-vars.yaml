@@ -1,7 +1,7 @@
 - name: demo of task level variable
   hosts: localhost
   connection: local
-  varss:
+  vars:
     COURSE: "Ansible"
     TRAINER: "Siva kumar"
     DURATION: "150 hrs"
