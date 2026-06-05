@@ -4,5 +4,5 @@
   - name: print host name
     debug:
       msg: "The name of the host is {{ host_name }}"
-      "
+      
       
