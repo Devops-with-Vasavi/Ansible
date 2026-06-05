@@ -1,6 +1,0 @@
-- name: gatherfacts variables
-  hosts: frontend
-  tasks:
-  - name: print ansible_facts
-    debug:
-      msg: "{{ ansible_facts }}"
