@@ -1,0 +1,14 @@
+- name: check no of Ansible live sessions
+  hosts: localhost
+  connection: local
+  vars:
+    no_of_live_session: 6
+  tasks:
+  - name: print no of Ansible live sessions
+    debug:
+      msg: "Yes Ansible live session took more than 6 sessions "
+      when: no_of_live_session> 6 
+  - name: print no of Ansible live sessions
+    debug:
+      msg: "Ansible live session not took more than 6 sessions "
+      when: no_of_live_session< 6
