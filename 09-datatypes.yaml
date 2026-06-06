@@ -2,16 +2,16 @@
   hosts: localhost
   connection: local
   vars:
-  Course_name: "Devops with Aiops"    #string
-  Duration: 150  #integer/number
-  is_live_sessions: true   #bool
-  topics:   # list
-  - Linux
-  - Shell
-  - Ansible
-  more topics: #map
-    months: "5"
-    trainer: "siva kumar reddy"
+    Course_name: "Devops with Aiops"    #string
+    Duration: 150  #integer/number
+    is_live_sessions: true   #bool
+    topics:   # list
+    - Linux
+    - Shell
+    - Ansible
+    more topics: #map
+      months: "5"
+      trainer: "siva kumar reddy"
   tasks:
   - name: print information
     msg: |
