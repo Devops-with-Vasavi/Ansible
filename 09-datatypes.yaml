@@ -15,7 +15,7 @@
   tasks:
   - name: print information
     msg: |
-      name of the course: {{ course_name }}     
+      name of the course: {{ Course_name }}     
       duration in hrs: {{ Duration }}
       is it live sessions: {{ is_live_sessions }}    
       Topics are: {{ topics }}
