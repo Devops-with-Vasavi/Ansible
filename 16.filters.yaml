@@ -35,5 +35,5 @@
 
   - name: convert list to string
     debug:
-      msg: 
+      msg: "{{ tagmap | itemsdict2 }}"
        
