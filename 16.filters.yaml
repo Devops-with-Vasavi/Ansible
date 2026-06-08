@@ -35,5 +35,5 @@
 
   - name: convert list to string
     debug:
-      msg: "{{ taglist | itemsdict2 }}"
+      msg: "{{ taglist | items2dict }}"
        
