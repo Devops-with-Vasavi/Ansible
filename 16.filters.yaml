@@ -3,11 +3,18 @@
   connection: local
   vars:
     topics: Linux, Shell, Ansible, Terraform
+    tagmap:
+     name: Ansible
+     project: Roboshop
+     Environment: Dev
   tasks:
   - name: convert string to list
     debug:
       msg: "Topics are: {{ topics | split (',') }}"
-  - name: default string
+  - name: Set default value
     debug:
       msg: " Hi, {{ GREETING | default( ' Good Morning' ) }}"
+  - name: convert map to list
+    debug:
+      msg: "{{ tagmap | dict2items }}"
        
