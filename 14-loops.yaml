@@ -9,5 +9,4 @@
     loop:
     - nginx
     - mysql
-    - mongodb-mongosh
     - git
