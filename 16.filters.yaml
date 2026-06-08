@@ -4,10 +4,25 @@
   vars:
     topics: Linux, Shell, Ansible, Terraform
     tagmap:
-     name: Ansible
-     project: Roboshop
-     Environment: Dev
-  tasks:
+      name: Ansible
+      project: Roboshop
+      Environment: Dev
+    taglist: [
+        {
+            "key": "name",
+            "value": "Ansible"
+        },
+        {
+            "key": "project",
+            "value": "Roboshop"
+        },
+        {
+            "key": "Environment",
+            "value": "Dev"
+        }
+    ]
+
+    tasks:
   - name: convert string to list
     debug:
       msg: "Topics are: {{ topics | split (',') }}"
@@ -17,4 +32,8 @@
   - name: convert map to list
     debug:
       msg: "{{ tagmap | dict2items }}"
+
+  - name: convert list to string
+    debug:
+      msg: 
        
